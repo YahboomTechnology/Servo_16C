@@ -41,7 +41,7 @@ namespace Servo_16C {
         S16 = 16
     }
 	
-    //% blockId= Servo_16Channel_init block="Servo_16Channel Uart Init at pin RX %txpin TX %rxpin"
+    //% blockId= Servo_16Channel_init block="Servo_16Channel Uart Init at pin RX| %txpin TX| %rxpin"
     //% weight=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
     export function initServo16Channel(txpin: SerialPin, rxpin: SerialPin): void {
@@ -53,7 +53,7 @@ namespace Servo_16C {
 		basic.pause(1000)
     }
 	
-    //% blockId= Servo_16Channel_uart block="set Servo %sevornum|angle %angle by uart"
+    //% blockId= Servo_16Channel_uart block="set Servo| %sevornum|angle %angle by uart"
     //% weight=15
     //% angle.min=0 angle.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
@@ -67,7 +67,7 @@ namespace Servo_16C {
 		basic.pause(100)
     }
 	
-    //% blockId= Servo_16Channel_iic block="set Servo %sevornum|angle %angle by iic"
+    //% blockId= Servo_16Channel_iic block="set Servo| %sevornum|angle %angle by iic"
     //% weight=10
     //% angle.min=0 angle.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
