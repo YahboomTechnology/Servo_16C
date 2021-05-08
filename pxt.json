@@ -1,0 +1,20 @@
+{
+    "name": "Servo_16C",
+    "version": "0.0.0",
+    "description": "**",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "Servo_16C.ts",
+        "_locales/zh-cn/Servo_16C-strings.json",
+        "_locales/zh-tw/Servo_16C-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "preferredEditor": "tsprj"
+}
