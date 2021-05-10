@@ -48,7 +48,7 @@ namespace Servo_16C {
 		serial.redirect(
 		txpin,
 		rxpin,
-		BaudRate.BaudRate115200
+		BaudRate.BaudRate9600
 		)
 		basic.pause(1000)
     }
