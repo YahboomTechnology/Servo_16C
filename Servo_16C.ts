@@ -64,7 +64,7 @@ namespace Servo_16C {
 		cmd_servo[2] = angle
 		cmd_servo[3] = 255
 		serial.writeBuffer(cmd_servo)
-		basic.pause(100)
+		basic.pause(20)
     }
 	
     //% blockId= Servo_16Channel_iic block="set Servo| %sevornum|angle %angle by iic"
