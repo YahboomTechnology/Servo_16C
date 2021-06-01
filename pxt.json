@@ -1,7 +1,7 @@
 {
     "name": "Servo_16C",
-    "version": "0.0.0",
-    "description": "**",
+    "version": "0.0.1",
+    "description": "Extension for YahBoom Servo_16C V0.0.1",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -15,6 +15,6 @@
     "testFiles": [
         "test.ts"
     ],
-    "public": true,
+    "public": false,
     "preferredEditor": "tsprj"
 }

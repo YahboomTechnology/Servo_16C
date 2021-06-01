@@ -1,11 +1,13 @@
+/*
+Copyright (C): 2010-2019, Shenzhen Yahboom Tech
+modified from chengengyue
+*/
 
 
-//% color=#ec924d  icon="\uf013" block="Servo_16C" blockId="Servo_16C"
+//% color=#ec924d weight=25 icon="\uf013"
 namespace Servo_16C {
 
-    /**
-    *  Servo_16C
-    */
+
     export enum GetServo {
         //% blockId="S1" block="S1"
         S1 = 1,
