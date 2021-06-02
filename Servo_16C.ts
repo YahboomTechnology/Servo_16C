@@ -60,11 +60,17 @@ namespace Servo_16C {
     //% angle.min=0 angle.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
     export function uartServo16Channel(sevornum: GetServo, angle: number): void {
-		let cmd_servo = pins.createBuffer(4)
-		cmd_servo[0] = 253
+		let cmd_servo = pins.createBuffer(6)
+		sevornum = 64 + sevornum
+		let date1 = angle/100 + 48
+		let date2 = (angle%100)/10 + 48
+		let date3 = angle%10 + 48
+		cmd_servo[0] = 36
 		cmd_servo[1] = sevornum
-		cmd_servo[2] = angle
-		cmd_servo[3] = 255
+		cmd_servo[2] = date1
+		cmd_servo[3] = date2
+		cmd_servo[4] = date3
+		cmd_servo[5] = 35
 		serial.writeBuffer(cmd_servo)
 		basic.pause(20)
     }
